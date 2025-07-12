@@ -1,0 +1,43 @@
+.predict-container {
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.symptom-grid label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.prediction-result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  border-left: 4px solid #1976d2;
+  background-color: #e3f2fd;
+  border-radius: 6px;
+}

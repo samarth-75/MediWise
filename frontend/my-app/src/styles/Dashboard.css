@@ -1,0 +1,60 @@
+.dashboard-container {
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: #2196f3;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link,
+.logout-button {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.stats-card {
+  background: #f0f0f0;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.action-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.action-buttons button {
+  padding: 0.7rem 1.5rem;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.health-tip {
+  margin-top: 2rem;
+  background-color: #e0f7fa;
+  padding: 1rem;
+  border-left: 5px solid #00796b;
+  border-radius: 5px;
+}
