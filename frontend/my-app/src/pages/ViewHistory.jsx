@@ -12,7 +12,7 @@ export default function ViewHistory() {
     if (!user) return;
 
     axios
-      .get(`http://localhost:5000/history/${user.id}`)
+      .get(`https://mediwise-7zso.onrender.com/history/${user.id}`)
       .then((res) => setHistory(res.data.history))
       .catch((err) => console.error("Error fetching history:", err));
   }, []);
