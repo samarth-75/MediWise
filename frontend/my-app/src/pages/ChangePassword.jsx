@@ -18,7 +18,7 @@ export default function ChangePassword() {
     }
 
     try {
-      const res = await axios.post("https://mediwise-7zso.onrender.com", {
+      const res = await axios.post("https://mediwise-7zso.onrender.com/change-password", {
         user_id: user.id,
         old_password: oldPass,
         new_password: newPass

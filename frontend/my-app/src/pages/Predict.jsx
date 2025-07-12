@@ -30,7 +30,7 @@ export default function Predict() {
     }
 
     // 📦 Send user_id + symptoms to backend
-    const res = await axios.post("https://mediwise-7zso.onrender.com", {
+    const res = await axios.post("https://mediwise-7zso.onrender.com/predict", {
       symptoms: selectedSymptoms,
       user_id: user.id,
     });

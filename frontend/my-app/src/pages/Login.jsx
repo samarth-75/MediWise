@@ -18,7 +18,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://mediwise-7zso.onrender.com", formData);
+      const res = await axios.post("https://mediwise-7zso.onrender.com/dashboard", formData);
       setMessage(res.data.message); // "Login successful"
       console.log(res.data.user); // You can store this in localStorage or state later
       localStorage.setItem("user", JSON.stringify(res.data.user));
