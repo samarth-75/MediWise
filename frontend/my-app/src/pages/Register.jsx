@@ -19,7 +19,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://mediwise-7zso.onrender.com/login", formData);
+      const res = await axios.post("http://localhost:5000/login", formData);
       setMessage(res.data.message); // Show success
     } catch (err) {
       setMessage(err.response?.data?.error || "Registration failed");

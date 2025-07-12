@@ -10,7 +10,7 @@ export default function Profile() {
     const user = JSON.parse(localStorage.getItem("user"));
     if (!user) return;
 
-    axios.get(`https://mediwise-7zso.onrender.com/profile/${user.id}`)
+    axios.get(`http://localhost:5000/profile/${user.id}`)
       .then(res => setUserData(res.data.user))
       .catch(err => console.error("Error fetching profile:", err));
   }, []);
