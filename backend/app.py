@@ -13,7 +13,7 @@ all_symptoms = ["fever", "cough", "sore_throat", "rash", "nausea", "joint_pain"]
 app = Flask(__name__)
 
 # ✅ Enable CORS for your frontend URL
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/*": {"origins": "https://deluxe-toffee-8821ec.netlify.app"}})
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -191,4 +191,4 @@ def change_password():
         if conn: conn.close()
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
