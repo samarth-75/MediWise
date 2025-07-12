@@ -18,7 +18,7 @@ export default function Dashboard() {
       setUser(parsedUser);
 
       // Fetch stats
-      fetch(`http://localhost:5000/history/${parsedUser.id}`)
+      fetch(`https://mediwise-7zso.onrender.com/history/${parsedUser.id}`)
         .then((res) => res.json())
         .then((data) => {
           const history = data.history || [];
